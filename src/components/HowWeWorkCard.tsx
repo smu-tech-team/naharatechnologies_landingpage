@@ -49,6 +49,7 @@ const HowWeWorkCard = ({
                 keyExtractor={values.map((item) => item.id)}
                 styling="my-1"
                 titleStyle="font-medium underline"
+                descStyle="text-sm mt-1"
                 headerNumber={2}
               />
             </div>

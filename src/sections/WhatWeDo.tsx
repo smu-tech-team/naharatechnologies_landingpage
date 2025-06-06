@@ -75,8 +75,8 @@ const WhatWeDo = () => {
                 styling="mt-[15px]"
                 title={item.title}
                 desc={item.text}
-                titleStyle="font-semibold text-lg lg:text-2xl"
-                descStyle="text-[15px] lg:text-base mt-2"
+                titleStyle="font-semibold text-lg"
+                descStyle="mt-2"
               />
             </motion.article>
           );

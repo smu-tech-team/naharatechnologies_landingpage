@@ -9,9 +9,9 @@ const CoreValues = () => {
       <div className="relative">
         <TitleDescription
           title="💡 Our Core Values"
-          titleStyle="text-2xl font-semibold lg:font-medium text-center lg:text-left font-[var(--font-poppins)]"
-          desc="Our core values serve as the foundation of our team, driving collaboration, accountability, and excellence in all that we build."
-          descStyle="mt-2 hidden lg:block text-lg"
+          titleStyle="text-2xl font-semibold lg:font-medium text-center lg:text-left"
+          desc="Our core values serve as the foundation of our team."
+          descStyle="font-semibold mt-2 hidden lg:block text-4xl"
           headerNumber={2}
         />
 

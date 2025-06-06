@@ -1,32 +1,30 @@
+"use client";
+
 import ImageWrap from "@/components/ImageWrap";
+import LottieAnim from "@/components/LottieAnim";
 import TitleDescription from "@/components/TitleDescription";
-import { images, missionText } from "@/constants";
+import { images, lottieAnims, missionText } from "@/constants";
 import React from "react";
 
 const MissionVision = () => {
   return (
-    <div className="px-6 py-10 bg-white/40 lg:px-[105px]">
+    <div className="px-6 py-10 bg-black lg:px-[105px] rounded-se-[50px] rounded-es-[50px]">
       <TitleDescription
-        styling="max-w-[694px]"
+        styling="max-w-[694px] text-white"
         title="Our Mission"
         desc={missionText}
         titleStyle="text-lg font-bold"
-        descStyle=""
+        descStyle="mt-1"
       />
 
-      <ImageWrap
-        source={images.map}
-        containerStyle="size-full my-5"
-        imageStyle="size-full"
-        alt="mission and vision"
-      />
+      <LottieAnim lottieFile={lottieAnims.globe} styling="size-full my-5" />
 
       <TitleDescription
-        styling="max-w-[694px] ml-auto"
+        styling="max-w-[694px] ml-auto text-white"
         title="Our Vision"
         desc={missionText}
         titleStyle="text-lg font-bold"
-        descStyle=""
+        descStyle="mt-1"
       />
     </div>
   );

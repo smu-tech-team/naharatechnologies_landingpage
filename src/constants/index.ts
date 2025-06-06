@@ -11,6 +11,9 @@ import pulseLogo from "@/assets/logo-pulse.png";
 import apexLogo from "@/assets/logo-apex.png";
 import logo from "@/assets/NaharaTechnologiesWhite.png";
 
+// lottie animations
+import globe from "@/assets/animation-data/globe.json";
+
 const images = {
   SmileImg,
   boundary,
@@ -24,6 +27,10 @@ const images = {
   pulseLogo,
   apexLogo,
   logo,
+};
+
+const lottieAnims = {
+  globe,
 };
 
 const aboutBriefing =
@@ -162,7 +169,7 @@ const howWeWorkContent = [
         desc: "We own outcomes and deliver results you can trust",
       },
     ],
-     imageWrapAnimProps: {
+    imageWrapAnimProps: {
       initial: { scale: 0, opacity: 0 },
       whileInView: { scale: 1, opacity: [0.5, 1] },
     },
@@ -198,4 +205,5 @@ export {
   missionText,
   visionText,
   logos,
+  lottieAnims,
 };
