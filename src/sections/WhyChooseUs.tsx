@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
     <div className="px-6 py-10 lg:px-[105px] bg-white">
       <div className="relative w-full">
         <TitleDescription
-          styling="w-full lg:w-[50%] min-h-[200px] border lg:absolute p-6 top-[calc(50%+100px)] right-0 flex flex-col justify-center"
+          styling="w-full bg-white lg:w-[50%] min-h-[200px] border lg:absolute p-6 top-[calc(50%+100px)] right-0 flex flex-col justify-center rounded-e-3xl rounded-es-3xl shadow-lg"
           title="Why Choose Us"
           titleStyle="text-2xl font-semibold lg:font-medium text-center lg:text-left"
           headerNumber={2}
@@ -21,20 +21,20 @@ const WhyChooseUs = () => {
           source={images.boundary}
           containerStyle="border w-full lg:w-[60%] h-[400px]"
           alt="why choose us"
-          imageStyle="size-full object-center object-cover"
+          imageStyle="size-full object-center object-cover rounded-s-3xl rounded-se-3xl"
         />
       </div>
 
-      <div className="lg:mt-40 lg:flex items-stretch justify-between gap-8">
+      <div className="lg:mt-40 lg:flex justify-between gap-8">
         <TitleDescription
-          styling="flex-1 p-6 border rounded-lg my-5"
+          styling="flex-1 p-6 border rounded-3xl my-5 lg:my-0"
           title="What We Work"
           desc={whatWeWorkText}
           titleStyle="font-bold text-lg"
           descStyle=""
         />
         <TitleDescription
-          styling="flex-1 p-6 border rounded-lg"
+          styling="flex-1 p-6 border rounded-3xl"
           title="Do We Work"
           titleStyle="font-bold text-lg"
           desc={doWeWorkText}

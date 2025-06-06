@@ -11,7 +11,7 @@ const ValueCard = ({ icon, title, text, styling }: ValueCardProps) => (
       <div className="flex items-center gap-2 text-lg font-semibold mb-1 capitalize">
         {icon} {title}
       </div>
-      <p>{text}</p>
+      <p className="text-sm">{text}</p>
     </div>
   </article>
 );

@@ -34,7 +34,7 @@ const CoreValueRow = ({
     <div className={`lg:flex items-stretch lg:my-6 ${styling}`}>
       {values.map(({ id, title, text, iconColor }) => (
         <ValueCard
-          styling="bg-[#feecea] p-6 rounded-lg w-full lg:max-w-[250px] shadow-2xl my-5 lg:my-0"
+          styling="bg-[#feecea] p-6 rounded-3xl w-full lg:max-w-[250px] shadow-2xl my-5 lg:my-0"
           key={id}
           icon={valueIcon[title](iconColor)}
           title={title}

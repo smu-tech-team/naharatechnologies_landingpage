@@ -12,7 +12,6 @@ import TopButton from "@/components/topButton";
 export default function Home() {
   return (
     <>
-      <Header />
       <Hero />
       <LogoTicker />
       <ProductShowcase />
@@ -21,7 +20,6 @@ export default function Home() {
       <CallToAction />
       <QuickChatBox />
       <TopButton />
-      <Footer />
     </>
   );
 }

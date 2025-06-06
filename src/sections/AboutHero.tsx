@@ -11,7 +11,7 @@ const AboutHero = () => {
         <TitleDescription
           styling="text-center"
           title="About Us"
-          titleStyle="text-[28px] lg:text-8xl font-bold text-white"
+          titleStyle="text-[28px] lg:text-8xl font-bold text-white font-sans"
           desc="Our Mission and Our Mission"
           descStyle="text-white font-medium text-xl lg:text-2xl"
         />

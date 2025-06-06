@@ -3,6 +3,13 @@ import boundary from "@/assets/boundary.png";
 import map from "@/assets/map.png";
 import mivision from "@/assets/mivision.jpg";
 import choose from "@/assets/choose.webp";
+import acmeLogo from "@/assets/logo-acme.png";
+import quantumLogo from "@/assets/logo-quantum.png";
+import echoLogo from "@/assets/logo-echo.png";
+import celestiaLogo from "@/assets/logo-celestial.png";
+import pulseLogo from "@/assets/logo-pulse.png";
+import apexLogo from "@/assets/logo-apex.png";
+import logo from "@/assets/NaharaTechnologiesWhite.png";
 
 const images = {
   SmileImg,
@@ -10,6 +17,13 @@ const images = {
   choose,
   map,
   mivision,
+  acmeLogo,
+  quantumLogo,
+  echoLogo,
+  celestiaLogo,
+  pulseLogo,
+  apexLogo,
+  logo
 };
 
 const aboutBriefing =
@@ -37,11 +51,12 @@ const whatWeDo = [
     text: "We don't just market — we connect. With precise, data-driven strategies, we position yourbrand in front of the audience that truly matters.",
   },
 ];
+
 const whatWeWorkText =
   "Combine brilliance with technical expertise to bridge the gap between branding and technology, crafting solutions that command attention.";
 
 const doWeWorkText =
-  "Because you&apos;re more than just a service provider — you&apos;re a partner. At Nahara Technologies, we have the team, the strategy, andthe technical expertise to bridge the gap between sound and result.";
+  "Because you're more than just a service provider — you're a partner. At Nahara Technologies, we have the team, the strategy, andthe technical expertise to bridge the gap between sound and result.";
 
 const missionText =
   "We empower businesses widely by delivering innovative branding strategies, cutting-edge software solutions, and data-driven insights.";
@@ -55,13 +70,13 @@ const coreValues = [
       id: 1,
       title: "integrity",
       text: "We pursue excellence with passion.",
-      iconColor: "",
+      iconColor: "blue",
     },
     {
       id: 2,
       title: "dedication",
       text: "We are committed to excellence",
-      iconColor: "",
+      iconColor: "yellow",
     },
   ],
   [
@@ -69,13 +84,13 @@ const coreValues = [
       id: 3,
       title: "excellence",
       text: "We position businesses for global success",
-      iconColor: "",
+      iconColor: "red",
     },
     {
       id: 4,
       title: "customer focus",
       text: "We value your vision and amplify it.",
-      iconColor: "",
+      iconColor: "indigo",
     },
   ],
   [
@@ -83,13 +98,13 @@ const coreValues = [
       id: 5,
       title: "accountability",
       text: "We own our responsibilities.",
-      iconColor: "",
+      iconColor: "orange",
     },
     {
       id: 6,
       title: "innovation",
       text: "We embrace creativity and innovation",
-      iconColor: "",
+      iconColor: "ivory",
     },
   ],
 ];
@@ -137,6 +152,17 @@ const howWeWorkContent = [
   },
 ];
 
+const logos = [
+  { id: 1, src: images.acmeLogo, title: "Acme" },
+  { id: 2, src: images.quantumLogo, title: "Quantum" },
+  { id: 3, src: images.echoLogo, title: "Echo" },
+  { id: 4, src: images.celestiaLogo, title: "Celestia" },
+  { id: 5, src: images.pulseLogo, title: "Pulse" },
+  { id: 6, src: images.apexLogo, title: "Apex" },
+];
+
+
+
 export {
   images,
   aboutBriefing,
@@ -147,4 +173,5 @@ export {
   howWeWorkContent,
   missionText,
   visionText,
+  logos
 };
