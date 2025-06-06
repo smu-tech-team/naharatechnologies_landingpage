@@ -14,12 +14,11 @@ const HowWeWorkCard = ({
   title,
   text: desc,
   values,
-}: {
-  imageSetupType: string;
-  title: string;
-  text: string;
-  values?: { id: number; title: string; text: string }[];
-}) => {
+  imageWrapAnimProps,
+  containerAnimProps,
+  titleAnimProps,
+  descAnimProps,
+}: HowWeWorkCardProps) => {
   return (
     <div className="lg:flex items-stretch my-10">
       <ImageWrap
@@ -27,15 +26,20 @@ const HowWeWorkCard = ({
         source={images.boundary}
         imageStyle="size-full object-center object-cover"
         alt={`image for ${title}`}
+        imageWrapAnimProps={imageWrapAnimProps}
       />
 
       <div className="mt-6 lg:mt-0 lg:w-[50%] p-7 flex items-center justify-center">
         <div>
           <TitleDescription
+            styling="overflow-x-hidden"
             title={title}
             titleStyle="text-lg font-bold"
             desc={desc}
             descStyle="mt-2"
+            containerAnimProps={containerAnimProps}
+            titleAnimProps={titleAnimProps}
+            descAnimProps={descAnimProps}
           />
           {values && (
             <div>

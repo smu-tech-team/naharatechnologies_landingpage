@@ -23,7 +23,7 @@ const images = {
   celestiaLogo,
   pulseLogo,
   apexLogo,
-  logo
+  logo,
 };
 
 const aboutBriefing =
@@ -115,6 +115,19 @@ const howWeWorkContent = [
     imageSetupType: "first",
     title: "We stretch beyound boundary",
     text: "From launchingpromising startups to scaling thriving enterprises. We combinecreative brilliance with technical expertise to bridge the gap betweenbranding and technology, helping businesses stand out and stayrelevant",
+    imageWrapAnimProps: {
+      initial: { scale: 0, opacity: 0 },
+      whileInView: { scale: 1, opacity: [0.5, 1] },
+    },
+    titleAnimProps: {
+      initial: { x: -200, opacity: 0 },
+      whileInView: { x: 0, opacity: 1 },
+    },
+    descAnimProps: {
+      initial: { x: -200, opacity: 0 },
+      whileInView: { x: 0, opacity: 1 },
+      transition: { duration: 1, delay: 0.35 },
+    },
   },
   {
     id: 2,
@@ -149,6 +162,19 @@ const howWeWorkContent = [
         desc: "We own outcomes and deliver results you can trust",
       },
     ],
+     imageWrapAnimProps: {
+      initial: { scale: 0, opacity: 0 },
+      whileInView: { scale: 1, opacity: [0.5, 1] },
+    },
+    titleAnimProps: {
+      initial: { x: 200, opacity: 0 },
+      whileInView: { x: 0, opacity: 1 },
+    },
+    descAnimProps: {
+      initial: { x: 200, opacity: 0 },
+      whileInView: { x: 0, opacity: 1 },
+      transition: { duration: 1, delay: 0.35 },
+    },
   },
 ];
 
@@ -161,8 +187,6 @@ const logos = [
   { id: 6, src: images.apexLogo, title: "Apex" },
 ];
 
-
-
 export {
   images,
   aboutBriefing,
@@ -173,5 +197,5 @@ export {
   howWeWorkContent,
   missionText,
   visionText,
-  logos
+  logos,
 };

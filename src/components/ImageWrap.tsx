@@ -1,23 +1,28 @@
+"use client";
+
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const ImageWrap = ({
   source,
   containerStyle,
   imageStyle,
   alt,
+  imageWrapAnimProps,
   ...props
 }: {
   source: string | StaticImport;
   containerStyle: string;
   imageStyle: string;
+  imageWrapAnimProps?: any;
   alt: string;
 }) => {
   return (
-    <div className={containerStyle}>
+    <motion.div {...imageWrapAnimProps} className={containerStyle}>
       <Image src={source} alt={alt} className={imageStyle} {...props} />
-    </div>
+    </motion.div>
   );
 };
 

@@ -7,7 +7,7 @@ import CoreValues from "@/sections/CoreValues";
 
 export default function AboutPage() {
   return (
-    <section className="mx-auto text-gray-800">
+    <section className="mx-auto text-gray-800 overflow-x-hidden">
       <AboutHero />
       <WhatWeDo />
       <HowWeWork />

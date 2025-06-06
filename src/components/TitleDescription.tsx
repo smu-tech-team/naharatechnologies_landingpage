@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 
 const TitleDescription = ({
   styling,
@@ -7,6 +10,9 @@ const TitleDescription = ({
   desc,
   descStyle,
   headerNumber,
+  titleAnimProps,
+  descAnimProps,
+  containerAnimProps,
 }: {
   styling?: string;
   title: string | React.ReactNode;
@@ -14,23 +20,40 @@ const TitleDescription = ({
   desc?: string;
   descStyle?: string;
   headerNumber?: number;
+  titleAnimProps?: any;
+  descAnimProps?: any;
+  containerAnimProps?: any;
 }) => {
   const displayTitle = () => {
     switch (headerNumber) {
       case 2:
-        return <h2 className={titleStyle}>{title}</h2>;
+        return (
+          <motion.h2 {...titleAnimProps} className={titleStyle}>
+            {title}
+          </motion.h2>
+        );
       case 3:
-        return <h3 className={titleStyle}>{title}</h3>;
+        return (
+          <motion.h3 {...titleAnimProps} className={titleStyle}>
+            {title}
+          </motion.h3>
+        );
       default:
-        return <h1 className={titleStyle}>{title}</h1>;
+        return (
+          <motion.h1 {...titleAnimProps} className={titleStyle}>
+            {title}
+          </motion.h1>
+        );
     }
   };
 
   return (
-    <div className={styling}>
+    <motion.div {...containerAnimProps} className={styling}>
       {displayTitle()}
-      <p className={descStyle}>{desc}</p>
-    </div>
+      <motion.p {...descAnimProps} className={descStyle}>
+        {desc}
+      </motion.p>
+    </motion.div>
   );
 };
 

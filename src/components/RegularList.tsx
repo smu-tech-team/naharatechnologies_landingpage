@@ -5,11 +5,7 @@ const RegularList = ({
   renderItem: Component,
   keyExtractor = [],
   ...props
-}: {
-  data: any[];
-  renderItem: React.FC<any>;
-  keyExtractor?: (number | string)[];
-}) => {
+}: RegularListProps) => {
   return (
     <>
       {data.map((item, index) => (

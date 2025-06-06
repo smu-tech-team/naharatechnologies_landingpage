@@ -38,4 +38,17 @@
   .circular-clip {
      clip-path: circle(80% at 50% -50%);
   }
+
+  .polygon-clip-1 {
+    clip-path: polygon(0% 0%, 25% 0%, 10% 100%, 0% 100%);
+  }
+  .polygon-clip-2 {
+    clip-path: polygon(25% 0%, 50% 0%, 35% 100%, 10% 100%);
+  }
+  .polygon-clip-3 {
+    clip-path: polygon(50% 0%, 75% 0%, 60% 100%, 35% 100%);
+  }
+  .polygon-clip-4 {
+    clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 60% 100%);
+  }
 }
