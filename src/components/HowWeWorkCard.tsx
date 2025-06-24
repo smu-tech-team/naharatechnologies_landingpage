@@ -22,7 +22,7 @@ const HowWeWorkCard = ({
   return (
     <div className="lg:flex items-stretch my-10">
       <ImageWrap
-        containerStyle={`w-full rounded-3xl overflow-hidden lg:w-[50%] ${imageSetup[imageSetupType]}`}
+        containerStyle={`w-full  overflow-hidden lg:w-[50%] ${imageSetup[imageSetupType]}`}
         source={images.boundary}
         imageStyle="size-full object-center object-cover"
         alt={`image for ${title}`}
@@ -34,9 +34,9 @@ const HowWeWorkCard = ({
           <TitleDescription
             styling="overflow-x-hidden"
             title={title}
-            titleStyle="text-lg font-bold"
-            desc={desc}
-            descStyle="mt-2"
+            titleStyle="font-semibold text-xl"
+            desc={desc} 
+            descStyle="mt-2 text-gray-500 "
             containerAnimProps={containerAnimProps}
             titleAnimProps={titleAnimProps}
             descAnimProps={descAnimProps}

@@ -10,6 +10,8 @@ import celestiaLogo from "@/assets/logo-celestial.png";
 import pulseLogo from "@/assets/logo-pulse.png";
 import apexLogo from "@/assets/logo-apex.png";
 import logo from "@/assets/NaharaTechnologiesWhite.png";
+import { Palette, Code, PenLine, Megaphone } from "lucide-react";
+
 
 // lottie animations
 import globe from "@/assets/animation-data/globe.json";
@@ -41,21 +43,25 @@ const whatWeDo = [
     id: 1,
     title: "Branding",
     text: "We Craft unforgettable identities that set you apart. Whether you're an individual or a business, we design brands that resonate and endure.",
+    icon: Palette,
   },
   {
     id: 2,
     title: "Software Solutions",
     text: "From websites to mobile apps, we build digital experiences tailored to solve real problems, enhance visibility, and drive sales.",
+    icon: Code,
   },
   {
     id: 3,
     title: "Content Writing",
     text: "We tell your story with creativity, clarity, and strategy — because words should work for you, not just fill space.",
+    icon: PenLine,
   },
   {
     id: 4,
     title: "Marketing",
     text: "We don't just market — we connect. With precise, data-driven strategies, we position yourbrand in front of the audience that truly matters.",
+    icon: Megaphone,
   },
 ];
 
@@ -121,7 +127,7 @@ const howWeWorkContent = [
     id: 1,
     imageSetupType: "first",
     title: "We stretch beyound boundary",
-    text: "From launchingpromising startups to scaling thriving enterprises. We combinecreative brilliance with technical expertise to bridge the gap betweenbranding and technology, helping businesses stand out and stayrelevant",
+    text: "From launching promising startups to scaling thriving enterprises. We combine creative brilliance with technical expertise to bridge the gap between branding and technology, helping businesses stand out and stay relevant.",
     imageWrapAnimProps: {
       initial: { scale: 0, opacity: 0 },
       whileInView: { scale: 1, opacity: [0.5, 1] },

@@ -20,7 +20,7 @@ const NavBar = ({ styling }: { styling: string }) => {
         <a href="/help">Help</a>
       </li>
       <Link href="/contact">
-        <button className="bg-black text-white font-medium px-4 py-2 rounded-lg inline-flex items-center justify-center tracking-tight">
+        <button className="bg-black text-white font-medium px-4 py-2 inline-flex items-center justify-center tracking-tight">
           Contact Us
         </button>
       </Link>

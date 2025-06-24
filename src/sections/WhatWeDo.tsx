@@ -4,6 +4,7 @@ import TitleDescription from "@/components/TitleDescription";
 import { whatWeDo } from "@/constants";
 import React from "react";
 import { motion } from "framer-motion";
+import { Edit } from "lucide-react";
 
 const titleDescContainer = {
   hidden: { opacity: 0, transition: { when: "afterChildren" } },
@@ -28,10 +29,10 @@ const WhatWeDo = () => {
     <div className="bg-white px-6 py-10 lg:pt-[67px] lg:px-[105px]">
       <TitleDescription
         title="What We Do"
-        titleStyle="text-2xl font-semibold lg:font-medium text-center lg:text-left"
+        titleStyle="text-2xl font-semibold lg:font-bold text-center lg:text-4xl mb-2 lg:text-center"
         headerNumber={2}
         desc="We provide the Perfect Solution to your business growth"
-        descStyle="font-semibold mt-2 hidden lg:block text-4xl"
+        descStyle="font-medium mt-2 hidden lg:block text-2xl text-center text-gray-500"
         containerAnimProps={{
           initial: "hidden",
           variants: titleDescContainer,
@@ -54,10 +55,11 @@ const WhatWeDo = () => {
         whileInView="visible"
       >
         {whatWeDo.map((item, index) => {
+          const Icon = item.icon;
           return (
             <motion.article
               key={item.id}
-              className="border border-[#FEECEA] rounded-3xl shadow-md px-5 py-6 my-5 lg:my-0 flex-1"
+              className="border border-white shadow-md p-6 my-5 flex flex-col justify-center items-center lg:my-0 flex-1 mx-2"
               variants={{
                 hidden: { opacity: 0, y: index % 2 === 0 ? -100 : 100 },
                 visible: { opacity: 1, y: 0 },
@@ -68,15 +70,17 @@ const WhatWeDo = () => {
                   hidden: { scale: 0 },
                   visible: { scale: [1.5, 1] },
                 }}
-                className="size-10 lg:size-20 rounded-xl bg-[#FEECEA]/50"
-              />
+                className="size-10 lg:size-10 rounded-xl bg-[#FEECEA]/50 flex items-center justify-center"
+              >
+                <Icon size={30} color="red" strokeWidth={2.0} />
+              </motion.div>
 
               <TitleDescription
-                styling="mt-[15px]"
+                styling="mt-[15px] flex flex-col justify-center items-center text-center"
                 title={item.title}
                 desc={item.text}
-                titleStyle="font-semibold text-lg"
-                descStyle="mt-2"
+                titleStyle="font-semibold text-xl"
+                descStyle="mt-2 text-gray-500 text-md"
               />
             </motion.article>
           );
