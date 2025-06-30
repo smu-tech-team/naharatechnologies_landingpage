@@ -1,7 +1,6 @@
-import HowWeWorkCard from "@/components/HowWeWorkCard";
-import RegularList from "@/components/RegularList";
+import ImageWrap from "@/components/ImageWrap";
 import TitleDescription from "@/components/TitleDescription";
-import { howWeWorkContent } from "@/constants";
+import { howWeWorkContent, images } from "@/constants";
 import React from "react";
 
 const HowWeWork = () => {
@@ -24,11 +23,68 @@ const HowWeWork = () => {
       />
 
       <div className="mt-10">
-        <RegularList
-          data={howWeWorkContent}
-          renderItem={HowWeWorkCard}
-          keyExtractor={howWeWorkContent.map((item) => item.id)}
-        />
+        <div className="lg:flex items-stretch my-10">
+          <ImageWrap
+            containerStyle="w-full  overflow-hidden lg:w-[50%] first"
+            source={images.boundary}
+            imageStyle="size-full object-center object-cover"
+            alt="image for beyound boundary"
+            imageWrapAnimProps={howWeWorkContent[0].imageWrapAnimProps}
+          />
+
+          <div className="mt-6 lg:mt-0 lg:w-[50%] p-7 flex items-center justify-center">
+            <div>
+              <TitleDescription
+                styling="overflow-x-hidden"
+                title={howWeWorkContent[0].title}
+                titleStyle="font-semibold text-xl"
+                desc={howWeWorkContent[0].text}
+                descStyle="mt-2 text-gray-500 "
+                titleAnimProps={howWeWorkContent[0].titleAnimProps}
+                descAnimProps={howWeWorkContent[0].descAnimProps}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="lg:flex items-stretch my-10">
+          <ImageWrap
+            containerStyle="w-full  overflow-hidden lg:w-[50%] last"
+            source={images.boundary}
+            imageStyle="size-full object-center object-cover"
+            alt="image for beyound boundary"
+            imageWrapAnimProps={howWeWorkContent[1].imageWrapAnimProps}
+          />
+
+          <div className="mt-6 lg:mt-0 lg:w-[50%] p-7 flex items-center justify-center">
+            <div>
+              <TitleDescription
+                styling="overflow-x-hidden"
+                title={howWeWorkContent[1].title}
+                titleStyle="font-semibold text-xl"
+                desc={howWeWorkContent[1].text}
+                descStyle="mt-2 text-gray-500 "
+                titleAnimProps={howWeWorkContent[1].titleAnimProps}
+                descAnimProps={howWeWorkContent[1].descAnimProps}
+              />
+              <div>
+                {howWeWorkContent[1].values?.map(({ id, title, desc }) => {
+                  return (
+                    <TitleDescription
+                      key={id}
+                      title={title}
+                      desc={desc}
+                      titleStyle="font-medium underline"
+                      descStyle="text-sm mt-1"
+                      headerNumber={2}
+                      styling="my-1"
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
