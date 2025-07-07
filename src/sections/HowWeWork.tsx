@@ -1,5 +1,4 @@
-import HowWeWorkCard from "@/components/HowWeWorkCard";
-import RegularList from "@/components/RegularList";
+import ImageWrap from "@/components/ImageWrap";
 import TitleDescription from "@/components/TitleDescription";
 import { howWeWorkContent } from "@/constants";
 import Image from "next/image";

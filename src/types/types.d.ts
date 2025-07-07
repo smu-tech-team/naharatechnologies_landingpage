@@ -1,6 +1,6 @@
-declare interface RegularListProps {
-  data: any[];
-  renderItem: React.FC<any>;
+declare interface RegularListProps<T> {
+  data: T[];
+  renderItem: React.FC<T>;
   keyExtractor?: (number | string)[];
   [key: string]: any;
 }

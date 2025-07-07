@@ -1,11 +1,11 @@
 import React from "react";
 
-const RegularList = ({
+const RegularList = <T,>({
   data,
   renderItem: Component,
   keyExtractor = [],
   ...props
-}: RegularListProps) => {
+}: RegularListProps<T>) => {
   return (
     <>
       {data.map((item, index) => (
