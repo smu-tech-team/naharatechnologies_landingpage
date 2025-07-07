@@ -52,3 +52,19 @@
     clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 60% 100%);
   }
 }
+
+@keyframes underlineGrow {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.animate-underline {
+  animation: underlineGrow 5s ease-in-out infinite;
+}

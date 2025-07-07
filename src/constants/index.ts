@@ -10,6 +10,7 @@ import celestiaLogo from "@/assets/logo-celestial.png";
 import pulseLogo from "@/assets/logo-pulse.png";
 import apexLogo from "@/assets/logo-apex.png";
 import logo from "@/assets/NaharaTechnologiesWhite.png";
+import whyChooseUS from "@/assets/why-choose-us.png";
 import { Palette, Code, PenLine, Megaphone } from "lucide-react";
 
 
@@ -19,6 +20,7 @@ import globe from "@/assets/animation-data/globe.json";
 const images = {
   SmileImg,
   boundary,
+  whyChooseUS,
   choose,
   map,
   mivision,

@@ -8,7 +8,7 @@ import React from "react";
 
 const MissionVision = () => {
   return (
-    <div className="px-6 py-10 bg-black lg:px-[105px] rounded-se-[50px] rounded-es-[50px]">
+    <div className="px-6 py-10 bg-black lg:px-[105px]">
       <TitleDescription
         styling="max-w-[694px] text-white"
         title="Our Mission"
@@ -17,7 +17,9 @@ const MissionVision = () => {
         descStyle="mt-1"
       />
 
-      <LottieAnim lottieFile={lottieAnims.globe} styling="size-full my-5" />
+      {/* <LottieAnim lottieFile={lottieAnims.globe} styling="size-full my-5" /> */}
+      <LottieAnim lottieFile={lottieAnims.globe} styling=" w-full my-5" animClass="h-64" />
+
 
       <TitleDescription
         styling="max-w-[694px] ml-auto text-white"
