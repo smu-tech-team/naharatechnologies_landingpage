@@ -24,7 +24,7 @@ export const ProductShowcase = () => {
           <div className="flex justify-center">
             <div className="tag">Get your idea to live with Nahara-T</div>
           </div>
-          <h2 className="section-title  mt-5">
+          <h2 className="section-title mt-5">
             Branding made easy for you, by us.
           </h2>
           <p className="section-description mt-5">

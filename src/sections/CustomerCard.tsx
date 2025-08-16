@@ -12,7 +12,7 @@ type Customer = {
 
 export const CustomerCard = ({ customer }: { customer: Customer }) => {
   return (
-    <div className="bg-white rounded-2xl shadow-lg p-5 hover:shadow-xl transition-all">
+    <div className="bg-white shadow-md border border-white p-5 hover:shadow-xl transition-all">
       <div className="flex items-center space-x-4">
         <Image
           src={customer.image}

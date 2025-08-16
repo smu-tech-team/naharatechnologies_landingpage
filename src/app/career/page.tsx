@@ -206,7 +206,7 @@ export default function Career() {
             </p>
             <p className="text-gray-700 mt-2">{job.description}</p>
             <button
-              className="mt-4 bg-black text-white px-4 py-2 rounded-md hover:bg-gray-900 w-full"
+              className="mt-4 bg-black text-white px-4 py-2 hover:bg-gray-900 w-full"
               onClick={() => handleApply(job)}
             >
               Apply Now
@@ -218,7 +218,7 @@ export default function Career() {
       {/* Go Back Button */}
       <div className="text-center mt-8">
         <button
-          className="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 flex items-center gap-2 mx-auto"
+          className="bg-gray-800 text-white px-6 py-3 hover:bg-gray-900 flex items-center gap-2 mx-auto"
           onClick={() => router.push("/")}
         >
           <FiArrowLeft /> Go Back
@@ -245,7 +245,7 @@ export default function Career() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                className="bg-black text-white px-4 py-2 rounded-md w-full sm:w-auto"
+                className="bg-black text-white px-4 py-2 w-full sm:w-auto"
                 onClick={() =>
                   alert(`Application submitted for ${selectedJob.title}!`)
                 }

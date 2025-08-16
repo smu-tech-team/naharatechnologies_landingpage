@@ -23,7 +23,7 @@ export default function UpcomingProducts() {
 
   return (
     <div className="container mx-auto px-6 py-12">
-      <h2 className="text-3xl font-extrabold text-center mb-8">🚀 Upcoming Products</h2>
+      <h2 className="text-3xl font-extrabold text-center mb-8">Upcoming Products</h2>
 
       {/* Product Grid - Responsive */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -33,7 +33,7 @@ export default function UpcomingProducts() {
             <h3 className="text-lg font-semibold">{product.name}</h3>
             <p className="text-gray-500 text-sm">{product.type}</p>
             <p className="text-gray-600 mt-2">{product.description}</p>
-            <button className="mt-4 bg-black text-white px-5 py-2 rounded-md hover:bg-gray-900 transition-colors" onClick={() => setWaitlistOpen(true)}>
+            <button className="mt-4 bg-black text-white px-5 py-2  hover:bg-gray-900 transition-colors" onClick={() => setWaitlistOpen(true)}>
               Join Waitlist
             </button>
           </div>
@@ -42,7 +42,7 @@ export default function UpcomingProducts() {
 
       {/* Go Back Home Button */}
       <div className="text-center mt-10">
-        <button className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900" onClick={() => router.push('/')}>
+        <button className="bg-gray-800 text-white px-6 py-3  hover:bg-gray-900" onClick={() => router.push('/')}>
           Go Back to Home
         </button>
       </div>
@@ -54,8 +54,8 @@ export default function UpcomingProducts() {
             <h3 className="text-2xl font-semibold mb-4">Join the Waitlist</h3>
             <input type="email" placeholder="Enter your email" className="border p-3 w-full rounded-md focus:ring-2 focus:ring-blue-500" value={email} onChange={(e) => setEmail(e.target.value)} />
             <div className="flex gap-4 justify-center mt-4">
-              <button className="bg-black text-white px-6 py-2 rounded-md" onClick={handleSubmit}>Submit</button>
-              <button className="bg-gray-300 px-6 py-2 rounded-md" onClick={() => setWaitlistOpen(false)}>Cancel</button>
+              <button className="bg-black text-white px-6 py-2" onClick={handleSubmit}>Submit</button>
+              <button className="bg-gray-300 px-6 py-2 " onClick={() => setWaitlistOpen(false)}>Cancel</button>
             </div>
           </div>
         </div>
