@@ -7,9 +7,6 @@ import Link from "next/link";
 import {  ArrowLeft } from "lucide-react";
 
 
-
-
-
 const ContactUs = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 

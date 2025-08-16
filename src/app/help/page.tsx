@@ -23,7 +23,7 @@ export default function Help() {
   const router = useRouter();
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-      <h2 className="text-2xl sm:text-4xl font-extrabold text-center mb-8">🆘 Need Help?</h2>
+      <h2 className="text-2xl sm:text-4xl font-extrabold text-center mb-8">Need Help?</h2>
       <SearchBar  placeholder="Search for help topics..." onChange={(e) => setSearchTerm(e.target.value)} />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {faqCategories.map((category) => (
@@ -39,7 +39,7 @@ export default function Help() {
       </div>
       <ContactCard />
       <div className="text-center mt-8">
-        <button className="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 flex items-center gap-2 mx-auto" onClick={() => router.push("/")}>
+        <button className="bg-gray-800 text-white px-6 py-3 hover:bg-gray-900 flex items-center gap-2 mx-auto" onClick={() => router.push("/")}>
           <FiArrowLeft /> Go Back
         </button>
       </div>

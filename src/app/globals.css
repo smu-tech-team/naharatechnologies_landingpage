@@ -20,13 +20,13 @@
         border-[#222]/10 px-3 py-1 rounded-lg tracking-tight;
   }
   .section-title {
-    @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter
-        bg-gradient-to-b from-black to-[#fc4949] text-transparent bg-clip-text;
+    /* @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter
+        bg-gradient-to-b text-black bg-clip-text; */
+        @apply md:text-[44px] font-bold tracking-tighter text-center md:leading-[60px] text-xl mb-2 lg:text-center;
   }
 
   .section-description {
-    @apply text-center text-[22px] leading-[30px] 
-        tracking-tight text-[#3e0101];
+    @apply font-medium mt-2 hidden lg:block text-2xl text-center text-gray-500;
   }
   .section-heading {
     @apply max-w-[540px] mx-auto;
@@ -67,4 +67,17 @@
 
 .animate-underline {
   animation: underlineGrow 5s ease-in-out infinite;
+}
+
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animate-hero-bg {
+  animation: zoomIn 5s ease-in-out infinite alternate;
 }

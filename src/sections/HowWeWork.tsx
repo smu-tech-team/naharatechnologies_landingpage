@@ -39,7 +39,8 @@ const HowWeWork = () => {
     <div className="px-6 py-10 lg:px-[105px]">
       <TitleDescription
         title="How We Work At Nahara Technologies"
-        titleStyle="text-2xl font-semibold lg:font-bold text-center lg:text-4xl mb-2 lg:text-center"
+        // titleStyle="text-2xl font-semibold lg:font-bold text-center lg:text-4xl mb-2 lg:text-center"
+        titleStyle="section-title"
         desc="Blending skill and technology to deliver smart, reliable solutions."
         descStyle="mt-2 hidden lg:block font-medium text-2xl text-center text-gray-500"
         headerNumber={2}

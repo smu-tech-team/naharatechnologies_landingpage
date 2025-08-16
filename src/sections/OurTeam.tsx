@@ -1,51 +1,46 @@
 import CheckIcon from "@/assets/check.svg";
 import DemoIcon from "@/assets/DemoIcon2.jpg";
+import Doris from "@/assets/doris.jpg"
+import Clinton from "@/assets/clinton2.jpg"
+import Smart from "@/assets/smart.jpg"
+import Kosi from "@/assets/kosi.jpg"
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
 const teamMembers = [
   {
-    name: "Sarah Johnson",
-    position: "Frontend Engineer",
-    role: "UI/UX Designer",
-    imageSrc: DemoIcon.src,
+    name: "Smart Sunday",
+    position: "Co-founder",
+    role: "Fullstack Sofware Engineer",
+    experience:"Software engineer and Buisness developer",
+    imageSrc: Smart.src,
     inverse: false,
   },
   {
-    name: "Michael Smith",
-    position: "Backend Engineer",
-    role: "API Developer",
-    imageSrc: DemoIcon.src,
+    name: "Ebelechukwu Doris Okolo",
+    position: "Co-founder",
+    role: "Fullstack sofware Engineer",
+    experience:"Software engineer and team lead",
+    imageSrc: Doris.src,
     inverse: true,
   },
   {
-    name: "Linda Akintola",
-    position: "Brand Strategist",
-    role: "Marketing Lead",
-    imageSrc: DemoIcon.src,
+    name: "Kosiso Ifeanyi Ofianwa",
+    position: "Project Head",
+    role: "Project Manager",
+    experience:"Project manager",
+    imageSrc: Kosi.src,
     inverse: false,
   },
   {
-    name: "James Adeyemi",
-    position: "Fullstack Engineer",
-    role: "Technical Lead",
-    imageSrc: DemoIcon.src,
+    name: "Clinton Ngotta",
+    position: "Chief Technical Officer",
+    role: "CTO",
+    experience:"Software engineer, team lead, CTO",
+    imageSrc: Clinton.src,
     inverse: true,
   },
-  {
-    name: "Emily Zhang",
-    position: "Product Manager",
-    role: "Strategy Planner",
-    imageSrc: DemoIcon.src,
-    inverse: false,
-  },
-  {
-    name: "David Okoro",
-    position: "DevOps Engineer",
-    role: "Infrastructure Specialist",
-    imageSrc: DemoIcon.src,
-    inverse: true,
-  },
+ 
 ];
 
 export const OurTeam = () => {
@@ -60,7 +55,7 @@ export const OurTeam = () => {
           </p>
         </div>
         <div className="flex flex-wrap gap-6 justify-center mt-10">
-          {teamMembers.map(({ name, position, role, imageSrc, inverse }) => (
+          {teamMembers.map(({name,position,role,imageSrc,inverse,experience}) => (
             <div
               key={name}
               className={twMerge(
@@ -82,26 +77,22 @@ export const OurTeam = () => {
               <Image
                 src={imageSrc}
                 alt={name}
-                width={96}
-                height={96}
+                width={50}
+                height={50}
                 className="rounded-full object-cover mx-auto mb-4"
               />
 
               <div className="text-center mb-6">
                 <h4 className="text-xl font-semibold">{name}</h4>
-                <p className="text-sm text-black/50 dark:text-white/70">{role}</p>
+                <p className="text-sm text-red-900">{role}</p>
               </div>
 
               <ul className="flex flex-col gap-5 mt-8">
-                <li className="text-sm flex items-center gap-4">
+                <li className="text-sm flex items-center gap-4 text-wrap">
                   <CheckIcon className="h-6 w-6" />
-                  <span>Leadership in {role}</span>
+                  <span>{experience}</span>
                 </li>
-                <li className="text-sm flex items-center gap-4">
-                  <CheckIcon className="h-6 w-6" />
-                  <span>Experience as {position}</span>
-                </li>
-                <li className="text-sm flex items-center gap-4">
+                <li className="text-sm flex items-center gap-4 ">
                   <CheckIcon className="h-6 w-6" />
                   <span>Strong team contributor</span>
                 </li>

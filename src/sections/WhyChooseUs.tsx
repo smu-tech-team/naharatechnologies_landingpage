@@ -10,7 +10,8 @@ const WhyChooseUs = () => {
   
         <TitleDescription
           title={
-            <span className="relative inline-block">
+            <span className="relative inline-block section-title">
+              
               Why Choose Us
               <span className="absolute left-0 -bottom-1 h-1 bg-red-500 animate-underline"></span>
             </span>

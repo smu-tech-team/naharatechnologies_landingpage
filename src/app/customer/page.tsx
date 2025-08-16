@@ -52,7 +52,7 @@ export default function CustomerPage() {
         </button>
       </div>
 
-      <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">🌟 Our Valued Customers</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">Our Valued Customers</h1>
 
       <p className="text-center text-gray-600 mb-6">
         We cherish every connection and provide the best experience for our customers worldwide.
