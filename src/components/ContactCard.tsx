@@ -1,28 +1,35 @@
 "use client";
-import { FiPhone, FiMail, FiMessageSquare } from "react-icons/fi";
+import { useState } from "react";
+import { FiPhone, FiMail } from "react-icons/fi";
+import ContactLink from "./ContactLink";
+import LiveChatButton from "./LiveChatButton";
+import ChatModal from "./ChatModal";
 
-const ContactCard = () => {
+const ContactCard: React.FC = () => {
+  const [openChat, setOpenChat] = useState(false);
+
   return (
     <div className="mt-12 px-4 py-6 bg-gray-100 rounded-lg shadow-lg text-center">
-      <h3 className="text-xl sm:text-2xl font-semibold">💻 IT Support Contact</h3>
-      <p className="text-gray-600 mt-2 text-sm sm:text-base">Get in touch with our team for advanced technical assistance.</p>
+      <h3 className="text-xl sm:text-2xl font-semibold text-red-900">💻 IT Support Contact</h3>
+      <p className="text-gray-700 mt-2 text-sm sm:text-base">
+        Get in touch with our team for advanced technical assistance.
+      </p>
 
       <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:justify-center">
-        <a href="mailto:support@naharatechnologies.com" className="text-blue-600 flex items-center gap-2 justify-center hover:underline">
-          <FiMail className="text-lg" />
-          <span className="text-sm sm:text-base">support@naharatechnologies.com</span>
-        </a>
-
-        <a href="tel:+2349078781812" className="text-blue-600 flex items-center gap-2 justify-center hover:underline">
-          <FiPhone className="text-lg" />
-          <span className="text-sm sm:text-base">+234 9078781812</span>
-        </a>
-
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 flex items-center justify-center gap-2 text-sm sm:text-base">
-          <FiMessageSquare className="text-lg" />
-          Live Chat
-        </button>
+        <ContactLink
+          href="mailto:support@naharatechnologies.com"
+          icon={FiMail}
+          text="support@naharatechnologies.com"
+        />
+        <ContactLink
+          href="tel:+2349078781812"
+          icon={FiPhone}
+          text="+234 9078781812"
+        />
+        <LiveChatButton onClick={() => setOpenChat(true)} />
       </div>
+
+      <ChatModal isOpen={openChat} onClose={() => setOpenChat(false)} />
     </div>
   );
 };

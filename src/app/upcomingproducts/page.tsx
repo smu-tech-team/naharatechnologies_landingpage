@@ -24,8 +24,6 @@ export default function UpcomingProducts() {
   return (
     <div className="container mx-auto px-6 py-12">
       <h2 className="text-3xl font-extrabold text-center mb-8">🚀 Upcoming Products</h2>
-
-      {/* Product Grid - Responsive */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product) => (
           <div key={product.id} className="p-4 bg-white shadow-md rounded-lg transition-transform hover:scale-105 flex flex-col items-center text-center">
@@ -39,15 +37,11 @@ export default function UpcomingProducts() {
           </div>
         ))}
       </div>
-
-      {/* Go Back Home Button */}
       <div className="text-center mt-10">
         <button className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900" onClick={() => router.push('/')}>
           Go Back to Home
         </button>
       </div>
-
-      {/* Waitlist Popup - Mobile Optimized */}
       {waitlistOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center w-full max-w-sm">
