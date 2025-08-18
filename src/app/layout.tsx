@@ -21,7 +21,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Nahara technologies plc",
-  description: "Landing page",
+  description: "We empower brands across the globe through cutting-edge software solutions, impact-driven brand strategies, data-backed marketing expertise,and built-in IT team with no hiring stress for SME's",
   icons: {
     icon: "/NaharaIcon2.ico",
   },

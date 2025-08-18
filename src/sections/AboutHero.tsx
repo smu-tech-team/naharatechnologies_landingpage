@@ -12,7 +12,7 @@ const AboutHero = () => {
           styling="text-center"
           title="About Us"
           titleStyle="text-[28px] lg:text-8xl font-bold text-white"
-          desc="Our Mission and Our Mission"
+          desc="Our Vision and Our Mission"
           descStyle="text-white font-medium text-xl lg:text-2xl"
         />
       </Overlay>
