@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import { DM_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
-import Header from "@/sections/Header";
-import { Footer } from "@/sections/Footer";
+import Header from '@/sections/Header';
+import { Footer } from '@/sections/Footer';
+import TopButton from '@/components/topButton';
+import { QuickChatBox } from '@/components/QuickChatBox';
+
+
+
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -33,11 +38,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={clsx(dmSans.variable, poppins.variable)}>
-      <body className={clsx(poppins.className, "antialiased bg-[#feecea]")}>
-        <Header />
+    <html lang="en" className="relative">
+      <body className={clsx(dmSans.className, "antialiased bg-[#feecea]")}>
+           <Header />
+              <TopButton/>
+                 <QuickChatBox/>
         {children}
-        <Footer />
+       <Footer/>
+
       </body>
     </html>
   );

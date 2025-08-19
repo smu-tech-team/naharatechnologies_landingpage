@@ -14,5 +14,4 @@ export const metadata: Metadata = {
 
 export default function ProductPage() {
   return <UpcomingProducts/>
-
 }
