@@ -1,19 +1,16 @@
-import WhatWeDo from "@/sections/WhatWeDo";
-import HowWeWork from "@/sections/HowWeWork";
-import WhyChooseUs from "@/sections/WhyChooseUs";
-import MissionVision from "@/sections/MissionVision";
-import AboutHero from "@/sections/AboutHero";
-import CoreValues from "@/sections/CoreValues";
+import About from "./About";
+import type { Metadata } from "next";
 
-export default function AboutPage() {
-  return (
-    <section className="mx-auto text-gray-800 overflow-x-hidden">
-      <AboutHero />
-      <WhatWeDo />
-      <HowWeWork />
-      <WhyChooseUs />
-      <MissionVision />
-      <CoreValues />
-    </section>
-  );
-}
+export const metadata: Metadata = {
+  title: "About Us | Nahara Technologies PLC",
+  description:
+    "Discover the story of Nahara Technologies PLC, our mission, vision, and values. Learn how we innovate to bridge the gap between branding and technology while empowering businesses to thrive.",
+  icons: {
+    icon: "/NaharaIcon2.ico",
+  },
+};
+
+
+export default function AboutPage(){
+  return <About/>
+} 
