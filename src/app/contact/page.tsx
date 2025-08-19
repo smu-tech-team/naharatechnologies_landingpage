@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/NaharaIcon2.ico",
   },
-
 };
 
 
