@@ -21,6 +21,10 @@ const config: Config = {
           lg: "80px",
         },
       },
+      fontFamily: {
+        sans: ["var(--font-dm-sans)"], // default body font
+        poppins: ["var(--font-poppins)"], // secondary font
+      },
     },
   },
   plugins: [],
