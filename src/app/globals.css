@@ -2,40 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-    .btn{
-        @apply font-medium px-4 py-2 rounded-lg 
+  .btn {
+    @apply font-medium px-4 py-2 rounded-lg 
         inline-flex items-center justify-center tracking-tight;
-    }
-
-    .btn-primary{
-      @apply  bg-black text-white;
-    }
-
-    .btn-text{
-        @apply text-black bg-transparent;
-    }
-    .logo-ticker-image{
-        @apply h-8 w-auto;
-    }
-
-    .tag{
-        @apply  text-sm inline-flex
+  }
+  .btn-primary {
+    @apply bg-black text-white;
+  }
+  .btn-text {
+    @apply text-black bg-transparent;
+  }
+  .logo-ticker-image {
+    @apply h-8 w-auto;
+  }
+  .tag {
+    @apply text-sm inline-flex
         border-[#222]/10 px-3 py-1 rounded-lg tracking-tight;
-    }
+  }
+  .section-title {
+    /* @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter
+        bg-gradient-to-b text-black bg-clip-text; */
+        @apply md:text-[44px] font-bold tracking-tighter text-center md:leading-[60px] text-xl mb-2 lg:text-center;
+  }
 
-    .section-title{
-        @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter
-        bg-gradient-to-b from-black to-[#fc4949] text-transparent bg-clip-text;
-    }
+  .section-description {
+    @apply font-medium mt-2 hidden lg:block text-2xl text-center text-gray-500;
+  }
+  .section-heading {
+    @apply max-w-[540px] mx-auto;
+  }
+  .card {
+    @apply p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
+  }
 
-    .section-description{
-        @apply text-center text-[22px] leading-[30px] 
-        tracking-tight text-[#3e0101];
-    }
-    .section-heading{
-        @apply max-w-[540px] mx-auto;
-    }
-    .card{
-        @apply p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
-    }
+  .circular-clip {
+     clip-path: circle(80% at 50% -50%);
+  }
+
+  .polygon-clip-1 {
+    clip-path: polygon(0% 0%, 25% 0%, 10% 100%, 0% 100%);
+  }
+  .polygon-clip-2 {
+    clip-path: polygon(25% 0%, 50% 0%, 35% 100%, 10% 100%);
+  }
+  .polygon-clip-3 {
+    clip-path: polygon(50% 0%, 75% 0%, 60% 100%, 35% 100%);
+  }
+  .polygon-clip-4 {
+    clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 60% 100%);
+  }
+}
+
+@keyframes underlineGrow {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.animate-underline {
+  animation: underlineGrow 5s ease-in-out infinite;
+}
+
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animate-hero-bg {
+  animation: zoomIn 5s ease-in-out infinite alternate;
 }
