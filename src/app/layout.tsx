@@ -6,6 +6,7 @@ import Header from '@/sections/Header';
 import { Footer } from '@/sections/Footer';
 import TopButton from '@/components/topButton';
 import { QuickChatBox } from '@/components/QuickChatBox';
+import { GoogleTagManager } from "@next/third-parties/google";
 
 
 
@@ -39,6 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
+      <GoogleTagManager gtmId='GTM-NKM6HG5J' />
       <body className={clsx(dmSans.className, "antialiased bg-[#feecea]")}>
            <Header />
               <TopButton/>
