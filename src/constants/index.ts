@@ -68,16 +68,16 @@ const whatWeDo = [
 ];
 
 const whatWeWorkText =
-  "Combine brilliance with technical expertise to bridge the gap between branding and technology, crafting solutions that command attention.";
+  "Because we want your buisness online — pay only 50% upfront, the rest spread flexibly with hosting and maintenance cost included";
 
 const doWeWorkText =
-  "Because you're more than just a service provider — you're a partner. At Nahara Technologies, we have the team, the strategy, andthe technical expertise to bridge the gap between sound and result.";
+  "Because you're more than just a service provider — you're a partner. At Nahara Technologies, we have the team, the strategy, and the technical expertise to bridge the gap between sound and result.";
 
 const missionText =
-  "We empower businesses widely by delivering innovative branding strategies, cutting-edge software solutions, and data-driven insights.";
+  "We empower businesses to thrive through innovative branding, advanced software solutions, and actionable insights.";
 
 const visionText =
-  "To position businesses for global success through strategic branding, software solutions, and marketing expertise.";
+  "To drive global success for businesses through strategic branding, innovative software, and marketing expertise.";
 
 const coreValues = [
   [
