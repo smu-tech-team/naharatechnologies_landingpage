@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
           lg:rounded-e-3xl lg:rounded-es-3xl  flex flex-col justify-center '
 						titleStyle='text-2xl font-semibold text-center lg:text-left'
 						headerNumber={2}
-						title='We Make You Standout'
+						title='Build Now, Pay Later'
 						desc={whatWeWorkText}
 						descStyle='text-gray-500'
 					/>
@@ -74,7 +74,7 @@ const WhyChooseUs = () => {
           rounded-3xl 
           lg:rounded-e-3xl lg:rounded-es-3xl flex flex-col justify-center '
 						headerNumber={2}
-						title='Do We Work'
+						title='We Bridge the Gap'
 						titleStyle='text-2xl font-semibold text-center lg:text-left'
 						desc={doWeWorkText}
 						descStyle='text-gray-500'
